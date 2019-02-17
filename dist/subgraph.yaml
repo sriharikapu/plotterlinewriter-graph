@@ -1,8 +1,8 @@
 specVersion: 0.0.2
 description: Gravatar for Ethereum
-repository: https://github.com/iainnash/plotterlinewriter-graph
+repository: 'https://github.com/rodventures/gravity-subgraph'
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: PlotterLineWriter
@@ -18,8 +18,8 @@ dataSources:
         - LineSet
       abis:
         - name: PlotterLineWriter
-          file: ./abis/PlotterLineWriter.json
+          file: PlotterLineWriter/abis/PlotterLineWriter.json
       eventHandlers:
-        - event: DrawLines(bytes32,uint32[],uint32[],bool[])
+        - event: 'DrawLines(bytes32,uint32[],uint32[],bool[])'
           handler: handleNewPlotterLineWriter
-      file: ./src/mapping.ts
+      file: PlotterLineWriter/PlotterLineWriter.wasm
