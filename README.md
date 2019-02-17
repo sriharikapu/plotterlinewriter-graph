@@ -1,3 +1,6 @@
-# Example Subgraph
+# Plotter Subwriter Graph Subscription
 
-An example to help you get started with The Graph. For more information see the docs on https://thegraph.com/docs/.
+Get plotter coordinates subscription with graphql from the blockchain.
+
+Powers the editor.
+
